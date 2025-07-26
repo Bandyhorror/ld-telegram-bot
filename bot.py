@@ -15,7 +15,6 @@ else:
 
 user_data = {}
 
-# ————————————————————————— КЛАВИАТУРЫ ——————————————————————————
 
 def back_keyboard():
     kb = InlineKeyboardMarkup(row_width=2)
@@ -40,7 +39,6 @@ def inline_main_keyboard():
 def send_main_menu(chat_id):
     bot.send_message(chat_id, "Главное меню:", reply_markup=inline_main_keyboard())
 
-# ———————————————————— ДАННЫЕ —————————————————————
 
 PREP_LINK = "Материал для подготовки здесь!\nhttps://ld-center.getcourse.ru/start\n\n"
 
@@ -198,7 +196,6 @@ section_map = {
     ],
 }
 
-# ———————————————————— ХЕНДЛЕРЫ —————————————————————
 
 @bot.message_handler(commands=['start'])
 def cmd_start(m):
